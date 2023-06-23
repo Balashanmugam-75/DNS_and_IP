@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0370e1dbf9d14ae9807865b8604e4ecd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_0370e1dbf9d14ae9807865b8604e4ecd" ></div>
+        
+</body>
+<script>    
+    
+            var map_0370e1dbf9d14ae9807865b8604e4ecd = L.map(
+                "map_0370e1dbf9d14ae9807865b8604e4ecd",
+                {
+                    center: [10.7905, 78.7047],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 6,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_371e9ff80aee4d0782bd659b9e5c3a88 = L.tileLayer(
+                "https://stamen-tiles-{s}.a.ssl.fastly.net/terrain/{z}/{x}/{y}.jpg",
+                {"attribution": "Map tiles by \u003ca href=\"http://stamen.com\"\u003eStamen Design\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by/3.0\"\u003eCC BY 3.0\u003c/a\u003e. Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_0370e1dbf9d14ae9807865b8604e4ecd);
+        
+    
+            var feature_group_d2446a06966f42f0841c5e255ee4859e = L.featureGroup(
+                {}
+            ).addTo(map_0370e1dbf9d14ae9807865b8604e4ecd);
+        
+    
+            var marker_5906f540cced4f299f9934428008d4f7 = L.marker(
+                [19.076, 72.8777],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_76176bd35c894c81bf3c7e1fb22ac167 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5906f540cced4f299f9934428008d4f7.setIcon(icon_76176bd35c894c81bf3c7e1fb22ac167);
+        
+    
+        var popup_1fcc7efd0830451d93feb2a56b275b72 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_0a2e73bdb57c4889b4ecf3747e3057e9 = $(`<div id="html_0a2e73bdb57c4889b4ecf3747e3057e9" style="width: 100.0%; height: 100.0%;">Google LLC</div>`)[0];
+            popup_1fcc7efd0830451d93feb2a56b275b72.setContent(html_0a2e73bdb57c4889b4ecf3747e3057e9);
+        
+
+        marker_5906f540cced4f299f9934428008d4f7.bindPopup(popup_1fcc7efd0830451d93feb2a56b275b72)
+        ;
+
+        
+    
+    
+            var marker_4e206b5284e14a70bf27ef7cda8be230 = L.marker(
+                [-34.556, -58.444],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_c6927ea2bf2c443b901ce7effb88de5c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e206b5284e14a70bf27ef7cda8be230.setIcon(icon_c6927ea2bf2c443b901ce7effb88de5c);
+        
+    
+        var popup_30ec5af550114a2ab6bcf791353b7d17 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c1e589578d554fcbbec04d70b4bec774 = $(`<div id="html_c1e589578d554fcbbec04d70b4bec774" style="width: 100.0%; height: 100.0%;">Telecom Personal S.A</div>`)[0];
+            popup_30ec5af550114a2ab6bcf791353b7d17.setContent(html_c1e589578d554fcbbec04d70b4bec774);
+        
+
+        marker_4e206b5284e14a70bf27ef7cda8be230.bindPopup(popup_30ec5af550114a2ab6bcf791353b7d17)
+        ;
+
+        
+    
+    
+            var marker_1ca751e079944d708275a92dda018e26 = L.marker(
+                [13.0827, 80.2707],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_702de484a8624b258a982159f4d028aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1ca751e079944d708275a92dda018e26.setIcon(icon_702de484a8624b258a982159f4d028aa);
+        
+    
+        var popup_cd0cda534c1c43c28246abfcf06b9b2b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_30a90024fc0f4d67910734413a02e34d = $(`<div id="html_30a90024fc0f4d67910734413a02e34d" style="width: 100.0%; height: 100.0%;">AWS CloudFront (GLOBAL)</div>`)[0];
+            popup_cd0cda534c1c43c28246abfcf06b9b2b.setContent(html_30a90024fc0f4d67910734413a02e34d);
+        
+
+        marker_1ca751e079944d708275a92dda018e26.bindPopup(popup_cd0cda534c1c43c28246abfcf06b9b2b)
+        ;
+
+        
+    
+    
+            var marker_488fc4eabd5e4d7784d148ef6240432c = L.marker(
+                [13.0827, 80.2707],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_4f0b0a15e45c45bfbb9e934c21353a66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_488fc4eabd5e4d7784d148ef6240432c.setIcon(icon_4f0b0a15e45c45bfbb9e934c21353a66);
+        
+    
+        var popup_46ffccfb29bd4b4fb5acbe16bb55cc96 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7fa1f08dbbf9462983c7171a70dee0dd = $(`<div id="html_7fa1f08dbbf9462983c7171a70dee0dd" style="width: 100.0%; height: 100.0%;">Google LLC</div>`)[0];
+            popup_46ffccfb29bd4b4fb5acbe16bb55cc96.setContent(html_7fa1f08dbbf9462983c7171a70dee0dd);
+        
+
+        marker_488fc4eabd5e4d7784d148ef6240432c.bindPopup(popup_46ffccfb29bd4b4fb5acbe16bb55cc96)
+        ;
+
+        
+    
+    
+            var marker_e5b9f8b3154f4f14bb8a4d8071b2f56f = L.marker(
+                [12.8996, 80.2209],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_1af35ea636dd4a6197c0bb308d7f12f6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e5b9f8b3154f4f14bb8a4d8071b2f56f.setIcon(icon_1af35ea636dd4a6197c0bb308d7f12f6);
+        
+    
+        var popup_5b603ba759b740bdb91c87ac3df2701f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_738dcbf21c924ad5a67251b922936513 = $(`<div id="html_738dcbf21c924ad5a67251b922936513" style="width: 100.0%; height: 100.0%;">Akamai Technologies, Inc.</div>`)[0];
+            popup_5b603ba759b740bdb91c87ac3df2701f.setContent(html_738dcbf21c924ad5a67251b922936513);
+        
+
+        marker_e5b9f8b3154f4f14bb8a4d8071b2f56f.bindPopup(popup_5b603ba759b740bdb91c87ac3df2701f)
+        ;
+
+        
+    
+    
+            var marker_83564017d78d4db78557a21f42a85092 = L.marker(
+                [-37.8136, 144.963],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_8e6370f5cbf5417b9b865a18341677ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_83564017d78d4db78557a21f42a85092.setIcon(icon_8e6370f5cbf5417b9b865a18341677ac);
+        
+    
+        var popup_20c5ccb9d4c94c0abe1649f54336a893 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ef7dc3e2b4424670afde78a643b02b47 = $(`<div id="html_ef7dc3e2b4424670afde78a643b02b47" style="width: 100.0%; height: 100.0%;">Commonwealth Bureau of Meteorology</div>`)[0];
+            popup_20c5ccb9d4c94c0abe1649f54336a893.setContent(html_ef7dc3e2b4424670afde78a643b02b47);
+        
+
+        marker_83564017d78d4db78557a21f42a85092.bindPopup(popup_20c5ccb9d4c94c0abe1649f54336a893)
+        ;
+
+        
+    
+    
+            var marker_210e8001c86748c3a94a193fc8d12e22 = L.marker(
+                [43.2965, 5.36978],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_f57fb5ed0eb74b799a21198732b4197a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_210e8001c86748c3a94a193fc8d12e22.setIcon(icon_f57fb5ed0eb74b799a21198732b4197a);
+        
+    
+        var popup_150bb08e4dc34346b1392d794439ec5b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_8a46d9be14514e9e9f98135710e1e109 = $(`<div id="html_8a46d9be14514e9e9f98135710e1e109" style="width: 100.0%; height: 100.0%;">AWS CloudFront (GLOBAL)</div>`)[0];
+            popup_150bb08e4dc34346b1392d794439ec5b.setContent(html_8a46d9be14514e9e9f98135710e1e109);
+        
+
+        marker_210e8001c86748c3a94a193fc8d12e22.bindPopup(popup_150bb08e4dc34346b1392d794439ec5b)
+        ;
+
+        
+    
+    
+            var marker_e96e563089c04b8a8a266a7249ee3a96 = L.marker(
+                [47.6222, -122.337],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_2315eacd2b37470fac5c56e46b7393d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e96e563089c04b8a8a266a7249ee3a96.setIcon(icon_2315eacd2b37470fac5c56e46b7393d6);
+        
+    
+        var popup_816916505ba846f0b4a3e71d340c7a0f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d39a367404894f618e47851bc8744cac = $(`<div id="html_d39a367404894f618e47851bc8744cac" style="width: 100.0%; height: 100.0%;">AWS Global Accelerator (GLOBAL)</div>`)[0];
+            popup_816916505ba846f0b4a3e71d340c7a0f.setContent(html_d39a367404894f618e47851bc8744cac);
+        
+
+        marker_e96e563089c04b8a8a266a7249ee3a96.bindPopup(popup_816916505ba846f0b4a3e71d340c7a0f)
+        ;
+
+        
+    
+    
+            var marker_6f2e5dba816546bfbf425c7ce0463233 = L.marker(
+                [19.136, 73.0039],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_4579aaa58b21465a96ae7adcd46ea8ed = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6f2e5dba816546bfbf425c7ce0463233.setIcon(icon_4579aaa58b21465a96ae7adcd46ea8ed);
+        
+    
+        var popup_5b4cbe8dbb7c4588b66358fe1a024fbb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2aaaede6645549ff82ce9c3245c5f49a = $(`<div id="html_2aaaede6645549ff82ce9c3245c5f49a" style="width: 100.0%; height: 100.0%;">Rjil Internet</div>`)[0];
+            popup_5b4cbe8dbb7c4588b66358fe1a024fbb.setContent(html_2aaaede6645549ff82ce9c3245c5f49a);
+        
+
+        marker_6f2e5dba816546bfbf425c7ce0463233.bindPopup(popup_5b4cbe8dbb7c4588b66358fe1a024fbb)
+        ;
+
+        
+    
+    
+            var marker_2a23eca3b7884bde8d8966eb066a6025 = L.marker(
+                [30.0588, 31.2268],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_e413e07143be4051a13087b8bbd2e88c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2a23eca3b7884bde8d8966eb066a6025.setIcon(icon_e413e07143be4051a13087b8bbd2e88c);
+        
+    
+        var popup_3c5021b971c3482087a7a565f8038385 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c4555d65364546099cf879f9ebb3ebcd = $(`<div id="html_c4555d65364546099cf879f9ebb3ebcd" style="width: 100.0%; height: 100.0%;"></div>`)[0];
+            popup_3c5021b971c3482087a7a565f8038385.setContent(html_c4555d65364546099cf879f9ebb3ebcd);
+        
+
+        marker_2a23eca3b7884bde8d8966eb066a6025.bindPopup(popup_3c5021b971c3482087a7a565f8038385)
+        ;
+
+        
+    
+    
+            var marker_75692d2c27c5489291e5e129d0f890fe = L.marker(
+                [45.5017, -73.5673],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_58431763e1de4050af697597e8835bf6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75692d2c27c5489291e5e129d0f890fe.setIcon(icon_58431763e1de4050af697597e8835bf6);
+        
+    
+        var popup_4e7544c32ff44fa1bdad1582dd546819 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_9a173248b72246a486205156661e7a5c = $(`<div id="html_9a173248b72246a486205156661e7a5c" style="width: 100.0%; height: 100.0%;">AWS Global Accelerator (GLOBAL)</div>`)[0];
+            popup_4e7544c32ff44fa1bdad1582dd546819.setContent(html_9a173248b72246a486205156661e7a5c);
+        
+
+        marker_75692d2c27c5489291e5e129d0f890fe.bindPopup(popup_4e7544c32ff44fa1bdad1582dd546819)
+        ;
+
+        
+    
+    
+            var marker_c239d691cd214516993affc7fa4828c7 = L.marker(
+                [35.6887, 139.745],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_06d0b641bc7d4e06a9e3764ce881bb8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c239d691cd214516993affc7fa4828c7.setIcon(icon_06d0b641bc7d4e06a9e3764ce881bb8d);
+        
+    
+        var popup_78fb37d28e0041c59c3a682f2a5acd75 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_bc4b4c69390d4c24a785108c26318de3 = $(`<div id="html_bc4b4c69390d4c24a785108c26318de3" style="width: 100.0%; height: 100.0%;">Rakuten</div>`)[0];
+            popup_78fb37d28e0041c59c3a682f2a5acd75.setContent(html_bc4b4c69390d4c24a785108c26318de3);
+        
+
+        marker_c239d691cd214516993affc7fa4828c7.bindPopup(popup_78fb37d28e0041c59c3a682f2a5acd75)
+        ;
+
+        
+    
+    
+            var marker_cdf6f9bd256a4fe284fa1c0e70215abf = L.marker(
+                [43.7047, -79.3982],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_8836ea81f63c487aa410c94bfda63476 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cdf6f9bd256a4fe284fa1c0e70215abf.setIcon(icon_8836ea81f63c487aa410c94bfda63476);
+        
+    
+        var popup_c38b54c92f5345f5bfe23700bf4f29c0 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f02133dd15db4de9a8da025a28816f38 = $(`<div id="html_f02133dd15db4de9a8da025a28816f38" style="width: 100.0%; height: 100.0%;">Canadian Tire Corporation, LTD</div>`)[0];
+            popup_c38b54c92f5345f5bfe23700bf4f29c0.setContent(html_f02133dd15db4de9a8da025a28816f38);
+        
+
+        marker_cdf6f9bd256a4fe284fa1c0e70215abf.bindPopup(popup_c38b54c92f5345f5bfe23700bf4f29c0)
+        ;
+
+        
+    
+    
+            var marker_ab3e27f1e72b48f5976afe814fcb5996 = L.marker(
+                [39.0438, -77.4874],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_2ed9a06492dd4b48b1ceac3b13d66565 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ab3e27f1e72b48f5976afe814fcb5996.setIcon(icon_2ed9a06492dd4b48b1ceac3b13d66565);
+        
+    
+        var popup_6918b3b7d9514ae8a2a3f1cf78ab0f97 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_28ef20b0bd2d45b18a8f71c8b6e39cfb = $(`<div id="html_28ef20b0bd2d45b18a8f71c8b6e39cfb" style="width: 100.0%; height: 100.0%;">AWS EC2 (us-east-1)</div>`)[0];
+            popup_6918b3b7d9514ae8a2a3f1cf78ab0f97.setContent(html_28ef20b0bd2d45b18a8f71c8b6e39cfb);
+        
+
+        marker_ab3e27f1e72b48f5976afe814fcb5996.bindPopup(popup_6918b3b7d9514ae8a2a3f1cf78ab0f97)
+        ;
+
+        
+    
+    
+            var marker_d3fb3aec38fe40a8b04b9f5e44a3fae6 = L.marker(
+                [45.5017, -73.5673],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_0b0f1bcbd5c94a4ba55bdca04deb3770 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d3fb3aec38fe40a8b04b9f5e44a3fae6.setIcon(icon_0b0f1bcbd5c94a4ba55bdca04deb3770);
+        
+    
+        var popup_024f5c32b72847e382603c7f53173984 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_86304930ee8d466c9ce27ec592ba1748 = $(`<div id="html_86304930ee8d466c9ce27ec592ba1748" style="width: 100.0%; height: 100.0%;">AWS Global Accelerator (GLOBAL)</div>`)[0];
+            popup_024f5c32b72847e382603c7f53173984.setContent(html_86304930ee8d466c9ce27ec592ba1748);
+        
+
+        marker_d3fb3aec38fe40a8b04b9f5e44a3fae6.bindPopup(popup_024f5c32b72847e382603c7f53173984)
+        ;
+
+        
+    
+    
+            var marker_025202f5ae2346a38607627e10322824 = L.marker(
+                [50.1109, 8.68213],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_66c0f88e346349a3a030da4ad291bd3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_025202f5ae2346a38607627e10322824.setIcon(icon_66c0f88e346349a3a030da4ad291bd3f);
+        
+    
+        var popup_b488a8ada3f042ac802be3aa5d01020a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2a9c3704d33a4689852ed8d2ea132828 = $(`<div id="html_2a9c3704d33a4689852ed8d2ea132828" style="width: 100.0%; height: 100.0%;">AWS EC2 (eu-central-1)</div>`)[0];
+            popup_b488a8ada3f042ac802be3aa5d01020a.setContent(html_2a9c3704d33a4689852ed8d2ea132828);
+        
+
+        marker_025202f5ae2346a38607627e10322824.bindPopup(popup_b488a8ada3f042ac802be3aa5d01020a)
+        ;
+
+        
+    
+    
+            var marker_e19da1413a3149fe807b0eec62f605f9 = L.marker(
+                [55.7332, 37.5833],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_9bef926deb96490e88522fb3295f3c50 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e19da1413a3149fe807b0eec62f605f9.setIcon(icon_9bef926deb96490e88522fb3295f3c50);
+        
+    
+        var popup_ba7ba55d7c3c41ceb971c65dbbe5768f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_67ed7b6bb6614b74b8a9d5851dbf32ed = $(`<div id="html_67ed7b6bb6614b74b8a9d5851dbf32ed" style="width: 100.0%; height: 100.0%;">Yandex LLC</div>`)[0];
+            popup_ba7ba55d7c3c41ceb971c65dbbe5768f.setContent(html_67ed7b6bb6614b74b8a9d5851dbf32ed);
+        
+
+        marker_e19da1413a3149fe807b0eec62f605f9.bindPopup(popup_ba7ba55d7c3c41ceb971c65dbbe5768f)
+        ;
+
+        
+    
+    
+            var marker_944e57c998c04cebb1d58d3fbb9b499c = L.marker(
+                [55.7558, 37.6173],
+                {}
+            ).addTo(feature_group_d2446a06966f42f0841c5e255ee4859e);
+        
+    
+            var icon_d5067784431746389caceb9654073da0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_944e57c998c04cebb1d58d3fbb9b499c.setIcon(icon_d5067784431746389caceb9654073da0);
+        
+    
+        var popup_172d9f567da24513922118a7795379e8 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_51d437f5ab4f4cf0910d22c2ec168753 = $(`<div id="html_51d437f5ab4f4cf0910d22c2ec168753" style="width: 100.0%; height: 100.0%;">Odnoklassniki Services</div>`)[0];
+            popup_172d9f567da24513922118a7795379e8.setContent(html_51d437f5ab4f4cf0910d22c2ec168753);
+        
+
+        marker_944e57c998c04cebb1d58d3fbb9b499c.bindPopup(popup_172d9f567da24513922118a7795379e8)
+        ;
+
+        
+    
+</script>
